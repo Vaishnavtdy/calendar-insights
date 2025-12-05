@@ -1,0 +1,24 @@
+.calendar-container {
+    padding: 20px;
+}
+
+.calendar-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.calendar-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.calendar-wrapper {
+    background: white;
+    padding: 15px;
+}
+
+/* Highlight dates with data */
+.rbc-day-bg.has-data {
+    background-color: #e3f2fd !important;
+}
