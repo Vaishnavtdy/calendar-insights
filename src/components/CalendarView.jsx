@@ -26,6 +26,7 @@ export default function CalendarView() {
     const calendarData = useSelector((state) => state.calendar.calendarData);
     const events = useMemo(() => convertToEvents(calendarData), [calendarData]);
     const [currentDate, setCurrentDate] = useState(new Date());
+    const [currentView, setCurrentView] = useState('month');
 
     const handleSelectSlot = (slot) => {
         const formatted = moment(slot.start).format('DD-MM-YYYY');
@@ -77,6 +78,8 @@ export default function CalendarView() {
                     endAccessor="end"
                     selectable
                     views={['month', 'week', 'day']}
+                    view={currentView}
+                    onView={setCurrentView}
                     onSelectSlot={handleSelectSlot}
                     onSelectEvent={handleSelectEvent}
                     eventPropGetter={eventStyleGetter}

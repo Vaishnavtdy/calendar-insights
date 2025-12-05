@@ -1,7 +1,9 @@
 {
-  "name": "react-calendar-analytics",
+  "name": "calendar-insights",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A React calendar application with data visualization using bar graphs, built with Redux and React Big Calendar",
+  "author": "Vaishnav",
   "type": "module",
   "scripts": {
     "dev": "vite",
